@@ -10,7 +10,7 @@ with feature details available, [here](https://www.transtats.bts.gov/Fields.asp?
 
 ## Summary of Findings
 
-* Arrival delay is the total of Departure Delay and Elapsed Time Delay, and I decided to investigate these 2 delays. I found that Departure Delay is generally far longer than Elapsed Time.　Though Departure Delay was left skewed and takes rather higher values, the Elapsed Time Delay is symmetric and takes rather lower values. Out of expectation, These 2 delays did not show clear correlationship with distance.
+* Arrival delay can be broken down into Departure Delay and Elapsed Time Delay. Elaped Time Delay is the lag between Actual Elapsed Time and CRS(scheduled) Elapsed Time. This means how many minutes passengers had to spend their extra time in the airplane. I decided to investigate these 2 delays. I found that Departure Delay is generally far longer than Elapsed Time.　Though Departure Delay was right skewed and takes rather higher values, the Elapsed Time Delay is symmetric and takes rather lower values. Out of expectation, These 2 delays did not show clear correlationship with distance.
 
 * There are 5 delay factors which are in the dataset. They are "NASDelay", "LateAircraftDelay", "CarrierDelay", "WeatherDelay" and "SecurityDelay". "NSADelay" happened most frequently followed by "LateAircraftDelay" and "CarrierDelay". "Security Delay" was found to have very little effect compared with other 4 factors, so I investigated only these 4 factors. These 4 factors did not show clear correlationship with distance.
 
