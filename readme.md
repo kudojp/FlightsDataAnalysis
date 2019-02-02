@@ -7,14 +7,14 @@
 
 飛行機の遅延時間は地上での遅れ(Departure Delay)と空での遅れ(Elapsed Time Delay)の合計として表されます。結論としては、Departure delayが長いほどCarrier DelayとWeather Delayの影響を大きく受けていて、一方でElapsed Time Delayが長いほどNSADelayの影響を大きく受けていることを発見しました。
 (本プロジェクトに関しては機械学習モデルの作成まではしておりません)
-
-├── flightsdata_explanation.ipynb
-├── flightsdata_explanation.slides.html
-├── flightsdata_exploration.html
-├── flightsdata_exploration.ipynb
-├── output_toggle.tpl
-└── readme.md
-
+   
+├── flightsdata_explanation.ipynb   
+├── flightsdata_explanation.slides.html   
+├── flightsdata_exploration.html   
+├── flightsdata_exploration.ipynb  
+├── output_toggle.tpl   
+└── readme.md    
+   
 flightsdata_expl"O"ration.htmlではデータの把握（一変数の分布、二変数の関係、三変数の関係）含め全ての過程を試行錯誤含め最初から最後まで残してあります。
 
 flightsdata_expl"A"nation.htmlではexplorationの内容を要約したものです。会議のプレゼンテーションなどで説明する際にはこちらを使います。
@@ -33,13 +33,22 @@ with feature details available, [here](https://www.transtats.bts.gov/Fields.asp?
 
 ```
 * Carrier Delay
-Carrier delay is within the control of the air carrier. Examples of occurrences that may determine carrier delay are: aircraft cleaning, aircraft damage, awaiting the arrival of connecting passengers or crew, baggage, bird strike, cargo loading, catering, computer, outage-carrier equipment, crew legality (pilot or attendant rest), damage by hazardous goods, engineering inspection, fueling, handling disabled passengers, late crew, lavatory servicing, maintenance, oversales, potable water servicing, removal of unruly passenger, slow boarding or seating, stowing carry-on baggage, weight and balance delays.
+Carrier delay is within the control of the air carrier. Examples of occurrences that may determine carrier delay are:  
+aircraft cleaning, aircraft damage, awaiting the arrival of connecting passengers or crew, baggage, bird strike, cargo   
+loading, catering, computer, outage-carrier equipment, crew legality (pilot or attendant rest), damage by hazardous goods,   
+engineering inspection, fueling, handling disabled passengers, late crew, lavatory servicing, maintenance, oversales, potable   
+water servicing, removal of unruly passenger, slow boarding or seating, stowing carry-on baggage, weight and balance delays.   
+
 * Late Arrival Delay
-Arrival delay at an airport due to the late arrival of the same aircraft at a previous airport. The ripple effect of an earlier delay at downstream airports is referred to as delay propagation.
+Arrival delay at an airport due to the late arrival of the same aircraft at a previous airport.  
+The ripple effect of an earlier delay at downstream airports is referred to as delay propagation.   
+
 * NAS Delay
-Delay that is within the control of the National Airspace System (NAS) may include: non-extreme weather conditions, airport operations, heavy traffic volume, air traffic control, etc. Delays that occur after Actual Gate Out are usually attributed to the NAS and are also reported through OPSNET.
+Delay that is within the control of the National Airspace System (NAS) may include:  
+non-extreme weather conditions, airport operations, heavy traffic volume, air traffic control, etc.   
+Delays that occur after Actual Gate Out are usually attributed to the NAS and are also reported through OPSNET.
 * Security Delay
-Security delay is caused by evacuation of a terminal or concourse, re-boarding of aircraft because of security breach, inoperative screening equipment and/or long lines in excess of 29 minutes at screening areas.
+Security delay is caused by evacuation of a terminal or concourse, re-boarding of aircraft because of security breach,   inoperative screening equipment and/or long lines in excess of 29 minutes at screening areas.
 Weather Delay
 Weather delay is caused by extreme or hazardous weather conditions that are forecasted or manifest themselves on point of departure, enroute, or on point of arrival.
 ```
