@@ -47,10 +47,14 @@ The ripple effect of an earlier delay at downstream airports is referred to as d
 Delay that is within the control of the National Airspace System (NAS) may include:  
 non-extreme weather conditions, airport operations, heavy traffic volume, air traffic control, etc.   
 Delays that occur after Actual Gate Out are usually attributed to the NAS and are also reported through OPSNET.
-* Security Delay
-Security delay is caused by evacuation of a terminal or concourse, re-boarding of aircraft because of security breach,   inoperative screening equipment and/or long lines in excess of 29 minutes at screening areas.
-Weather Delay
-Weather delay is caused by extreme or hazardous weather conditions that are forecasted or manifest themselves on point of departure, enroute, or on point of arrival.
+* Security Delay  
+  
+Security delay is caused by evacuation of a terminal or concourse, re-boarding of aircraft because of security breach,      
+inoperative screening equipment and/or long lines in excess of 29 minutes at screening areas.  
+
+* Weather Delay    
+Weather delay is caused by extreme or hazardous weather conditions that are forecasted or manifest themselves on point of   
+departure, enroute, or on point of arrival.
 ```
 
 * Finally, I visualized how the length of 4 delay factors were distributed by clustering the Departure Delay time length into 4 levels. Distance did not have a big effect on the delay time, so I did not include it in this visualization. The Departure Delay was divided into 5 levels and the distribution of each of 4 factors n each level,  were shown by clustered violin plot. It showed that the longer Departure Delay time is, the more it was associated with with longer CarrierDelay and WeatherDelay. Then I focused on Elapsed Time Delay and reproduced the plot with 2 levels of ElapsedTimeDelay instead of DepartureDelay. It suggested that only NAS Delay factor was associated with longer DepartureDelay.
