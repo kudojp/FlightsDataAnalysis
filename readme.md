@@ -1,9 +1,10 @@
 # Flights Data Analysis
 ## by Daiki Kudo
 
+This is my final project in Udacity Data Analyst Nanodegree.
 
 ## Project detail
-このプロジェクトでは2008年の米国の飛行機の飛行データをもとに、飛行機の到着の遅延が"NASDelay", "LateAircraftDelay", "CarrierDelay", "WeatherDelay","SecurityDelay". "NSADelay"の要素のどれに大きく影響させるかを分析しています。
+このプロジェクトでは2008年の米国の飛行機の飛行データをもとに、飛行機の到着の遅延が"NASDelay", "LateAircraftDelay", "CarrierDelay", "WeatherDelay","SecurityDelay". "NSADelay"の要素のどれに大きく影響されるかを分析しています。
 
 飛行機の遅延時間は地上での遅れ(Departure Delay)と空での遅れ(Elapsed Time Delay)の合計として表されます。結論としては、Departure delayが長いほどCarrier DelayとWeather Delayの影響を大きく受けていて、一方でElapsed Time Delayが長いほどNSADelayの影響を大きく受けていることを発見しました。
 (本プロジェクトに関しては機械学習モデルの作成まではしておりません)
